@@ -13,12 +13,21 @@ local colors = {
   cyan = "#51A9A2",
 
   gray = "#4F4F4F",
-  alt_bg = "#666666",
-  context = "#666666",
-  light_gray = "#666666",
+
+  alt_bg = "#999999",
+  -- context = "#999999",
+  light_gray = "#999999",
+
+  -- alt_bg = "#666666",
+  context = "#4F4F4F",
+  -- light_gray = "#666666",
+
   visual_grey = "#2C3535",
   dark = "#202727",
+  gray2 = '#141717',
 
+  dark_gray = "#222626",
+  popup_back = "#222626",
 
   info = "#999999",
   hint = "#999999",
@@ -55,10 +64,7 @@ local colors = {
 
 
   black = "#000000",
-  dark_gray = "#2a2f3e",
-  popup_back = "#1e2127",
   search_blue = "#264F78",
-  gray2 = '#1a1d22',
   dark_blue = "#223E55",
   light_red = "#be5046",
   sign_add = "#587c0c",
