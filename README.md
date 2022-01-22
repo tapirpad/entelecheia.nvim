@@ -1,2 +1,3 @@
 # Entelecheia.nvim
-My new personal self-made colorscheme
+My self-made colorscheme based on the script on [onedarker](https://github.com/LunarVim/onedarker.nvim)
+
