@@ -1,2 +1,2 @@
-# Onedarken.nvim
-Onedark inspired colorscheme written in lua.
+# Entelecheia.nvim
+My new personal self-made colorscheme
