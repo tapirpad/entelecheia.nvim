@@ -14,7 +14,8 @@ local colors = {
 
   -- Oranges for numbers, search, and modified accent
 
-  orange        = "#d19a66",
+  -- orange        = "#C07B39",
+  orange        = "#B6763A",
   search_orange = "#BFA25F",
   yellow_orange = "#BFA25F",
 
