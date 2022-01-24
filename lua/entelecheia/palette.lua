@@ -26,11 +26,11 @@ local colors = {
 
   -- Various shades of grey
 
-  context       = "#525252",
   alt_bg        = "#999999",
-  gray          = "#525252",
-  gray2         = '#141717',
   light_gray    = "#999999",
+  context       = "#535353",
+  gray          = "#535353",
+  gray2         = '#141717',
   visual_grey   = "#2a3333",
   dark          = "#202727",
   dark_gray     = "#222626",
