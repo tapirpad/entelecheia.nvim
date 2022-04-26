@@ -59,6 +59,7 @@ local colors = {
   sign_add      = "#587c0c",
   sign_change   = "#0c7d9d",
   sign_delete   = "#be5046",
+  -- sign_delete   = "#94151b",
 
   -- Untouched yet
 
