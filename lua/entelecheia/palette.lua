@@ -28,8 +28,8 @@ local colors = {
 
   -- Various shades of grey
 
-  -- alt_bg        = "#999999",
   alt_bg        = "#222626",
+  vsplit        = "#888888",
   light_gray    = "#999999",
   context       = "#535353",
   gray          = "#535353",

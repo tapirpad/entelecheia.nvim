@@ -55,7 +55,6 @@ local LSP = {
     NvimTreeNormal            = {fg = C.fg, bg = C.gray2, },
     NvimTreeVertSplit         = {fg = C.gray2, bg = C.gray2, },
     NvimTreeWinSeparator      = {fg = C.gray2, bg = C.gray2, },
-    -- VertSplit                 = {fg = C.gray2, bg = C.gray2, },
     NvimTreeFolderName        = {fg = C.blue, },
     NvimTreeOpenedFolderName  = {fg = C.blue, style = "NONE", },
     NvimTreeImageFile         = {fg = C.purple, },
@@ -69,8 +68,8 @@ local LSP = {
     NvimTreeSymlink           = {fg = C.cyan, },
     NvimTreeRootFolder        = {fg = C.fg, style = "bold", },
     NvimTreeExecFile          = {fg = C.green, },
-    NvimTreeStatusLine        = {fg = C.gray2, bg = C.gray2, },
-    NvimTreeStatusLineNC      = {fg = C.gray2, bg = C.gray2, },
+    NvimTreeStatusLine        = {fg = C.dark, bg = C.dark, },
+    NvimTreeStatusLineNC      = {fg = C.dark, bg = C.dark, },
     -- NvimTreeCursorLine = {bg = C.bg, },
 
     LirFloatNormal  = {fg = C.light_gray, bg = C.bg, },

@@ -16,7 +16,7 @@ local colors = {
   -- gray2  = '#2c323d',
   -- gray2  = '#2f3642',
   gray3  = '#3e4452',
-  gray4  = "#1e2127",
+  -- gray4  = "#1e2127",
   black  = "#000000",
 
   gray2  = '#2C3535',
