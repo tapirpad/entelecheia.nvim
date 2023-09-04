@@ -66,6 +66,7 @@ local colors = {
   indent_act    = "#B46CBC",
   search_blue   = "#264F78",
   dark_blue     = "#223E55",
+  qfline_blue   = "#1B3A50",
   light_red     = "#be5046",
   ui_blue       = "#264F78",
   modfg         = "#fabd2f",
