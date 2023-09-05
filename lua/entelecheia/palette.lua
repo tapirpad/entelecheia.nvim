@@ -2,8 +2,8 @@ local colors = {
 
   -- Main colors
 
-  bg            = "#181c1c",
-  fg            = "#999999",
+  bg            = '#141717',
+  fg            = "#959393",
   red           = "#BF616A",
   green         = "#73A569",
   yellow        = "#BFA25F",
@@ -24,27 +24,29 @@ local colors = {
   -- Cursor
 
   cursor_fg     = "#000000",
-  cursor_bg     = "#999999",
+  cursor_bg     = "#959393",
 
   -- Various shades of grey
 
-  alt_bg        = "#222626",
-  vsplit        = "#888888",
-  light_gray    = "#999999",
-  context       = "#535353",
-  gray          = "#535353",
-  gray2         = '#141717',
-  visual_grey   = "#2a3333",
-  dark          = "#202727",
-  dark_gray     = "#222626",
-  popup_back    = "#222626",
+  alt_bg        = "#192121",
+  vsplit        = "#848181",
+  light_gray    = "#959393",
+  -- context       = "#484848",
+  -- gray          = "#484848",
+  context       = "#505050",
+  gray          = "#484848",
+  gray2         = '#131313',
+  visual_grey   = "#262c2c",
+  dark          = "#1c2323",
+  dark_gray     = "#1c2323",
+  popup_back    = "#1c2323",
   black         = "#000000",
 
   -- LSP info, warning, error
 
   hint_blue     = "#53A3C6",
-  info          = "#999999",
-  hint          = "#999999",
+  info          = "#959393",
+  hint          = "#959393",
   info_yellow   = "#d19a66",
   warn          = "#BFA25F",
   warning_orange= "#BFA25F",
@@ -70,6 +72,77 @@ local colors = {
   light_red     = "#be5046",
   ui_blue       = "#264F78",
   modfg         = "#fabd2f",
+
+  -- -- Main colors
+  --
+  -- bg            = "#181c1c",
+  -- fg            = "#999999",
+  -- red           = "#BF616A",
+  -- green         = "#73A569",
+  -- yellow        = "#BFA25F",
+  -- blue          = "#53A3C6",
+  -- magenta       = "#B46CBC",
+  -- purple        = "#B46CBC",
+  -- cyan          = "#51A9A2",
+  --
+  --
+  -- -- Oranges for numbers, search, and modified accent
+  --
+  -- -- orange        = "#C07B39",
+  -- orange        = "#B6763A",
+  -- search_orange = "#BFA25F",
+  -- yellow_orange = "#BFA25F",
+  -- accent        = "#BFA25F",
+  --
+  -- -- Cursor
+  --
+  -- cursor_fg     = "#000000",
+  -- cursor_bg     = "#999999",
+  --
+  -- -- Various shades of grey
+  --
+  -- alt_bg        = "#222626",
+  -- vsplit        = "#888888",
+  -- light_gray    = "#999999",
+  -- context       = "#535353",
+  -- gray          = "#535353",
+  -- gray2         = '#141717',
+  -- visual_grey   = "#2a3333",
+  -- dark          = "#202727",
+  -- dark_gray     = "#222626",
+  -- popup_back    = "#222626",
+  -- black         = "#000000",
+  --
+  -- -- LSP info, warning, error
+  --
+  -- hint_blue     = "#53A3C6",
+  -- info          = "#999999",
+  -- hint          = "#999999",
+  -- info_yellow   = "#d19a66",
+  -- warn          = "#BFA25F",
+  -- warning_orange= "#BFA25F",
+  -- error_red     = "#B85347",
+  -- error         = "#B85347",
+  --
+  -- cyan_test     = "#51A9A2",
+  -- purple_test   = "#B46CBC",
+  --
+  -- -- Git sign
+  --
+  -- sign_add      = "#587c0c",
+  -- sign_change   = "#0c7d9d",
+  -- sign_delete   = "#be5046",
+  -- -- sign_delete   = "#94151b",
+  --
+  -- -- Untouched yet
+  --
+  -- indent_act    = "#B46CBC",
+  -- search_blue   = "#264F78",
+  -- dark_blue     = "#223E55",
+  -- qfline_blue   = "#1B3A50",
+  -- light_red     = "#be5046",
+  -- ui_blue       = "#264F78",
+  -- modfg         = "#fabd2f",
 
 }
 

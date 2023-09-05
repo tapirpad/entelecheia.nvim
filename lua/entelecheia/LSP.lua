@@ -100,7 +100,7 @@ local LSP = {
 
     -- NeoTreeBufferNumber        = {fg = C.fg, bg = C.bg }, --The buffer number shown in the buffers source.
     -- NeoTreeCursorLine          = {fg = C.fg, bg = C.bg }, --|hl-CursorLine| override in Neo-tree window.
-    -- NeoTreeDimText             = {fg = C.fg, bg = C.bg }, --Greyed out text used in various places.
+    NeoTreeDimText             = {fg = C.context, bg = C.bg }, --Greyed out text used in various places.
     -- NeoTreeDirectoryIcon       = {fg = C.fg, bg = C.bg }, --Directory icon.
     -- NeoTreeDirectoryName       = {fg = C.fg, bg = C.bg }, --Directory name.
     -- NeoTreeDotfile             = {fg = C.fg, bg = C.bg }, --Used for icons and names when dotfiles are filtered.
@@ -112,9 +112,9 @@ local LSP = {
     -- NeoTreeFloatTitle          = {fg = C.fg, bg = C.bg }, --Used for the title text of pop-ups when the border-style is set to another style than "NC". This is derived from NeoTreeFloatBorder.
     -- NeoTreeTitleBar            = {fg = C.fg, bg = C.bg }, --Used for the title bar of pop-ups, when the border-style is set to "NC". This is derived from NeoTreeFloatBorder.
     -- NeoTreeGitStaged           = {fg = C.fg, bg = C.bg }, --Used for git staged symbol.
-    -- NeoTreeHiddenByName        = {fg = C.fg, bg = C.bg }, --Used for icons and names when `hide_by_name` is used.
+    NeoTreeHiddenByName        = {fg = C.context, bg = C.bg }, --Used for icons and names when `hide_by_name` is used.
     -- NeoTreeEndOfBuffer         = {fg = C.fg, bg = C.bg }, --|hl-EndOfBuffer| override in Neo-tree window.
-    -- NeoTreeWindowsHidden       = {fg = C.fg, bg = C.bg }, --Used for icons and names that are hidden on Windows.
+    NeoTreeWindowsHidden       = {fg = C.context, bg = C.bg }, --Used for icons and names that are hidden on Windows.
 
 
 
