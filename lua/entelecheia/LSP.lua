@@ -116,8 +116,6 @@ local LSP = {
     -- NeoTreeEndOfBuffer         = {fg = C.fg, bg = C.bg }, --|hl-EndOfBuffer| override in Neo-tree window.
     NeoTreeWindowsHidden       = {fg = C.context, bg = C.bg }, --Used for icons and names that are hidden on Windows.
 
-
-
     LirFloatNormal  = {fg = C.light_gray, bg = C.bg, },
     LirDir          = {fg = C.blue, },
     LirSymLink      = {fg = C.cyan, },
@@ -132,9 +130,9 @@ local LSP = {
 
 
     CodiVirtualText = {fg = C.hint_blue, },
-    IndentBlanklineContextChar = {fg = C.gray, },
+    IndentBlanklineContextChar = {fg = C.dark_gray, },
     IndentBlanklineChar = {fg = C.dark_gray, },
-    IndentBlanklineSpaceChar = {fg = C.light_gray, },
+    IndentBlanklineSpaceChar = {fg = C.dark_gray, },
     IndentBlanklineSpaceCharBlankline = {fg = C.info_yellow, },
     DashboardHeader = {fg = C.blue, },
     DashboardCenter = {fg = C.purple, },
@@ -201,6 +199,183 @@ local LSP = {
     -- BufferLineHintDiagnosticSelected = {fg = C.gray, bg = C.alt_bg, style = "NONE"},
     -- BufferLineCloseButtonSelected = {fg = C.gray, bg = C.alt_bg, style = "NONE"},
     -- BufferLinePickVisible = {fg = C.gray, bg = C.alt_bg, style = "NONE"},
+
+    -- Treesitter
+    -- Complete color group:
+    --      https://github.com/nvim-treesitter/nvim-treesitter/blob/master/CONTRIBUTING.md
+    -- Example on how to use it:
+    --      https://github.com/rebelot/kanagawa.nvim/blob/master/lua/kanagawa/highlights/treesitter.lua
+
+    -- ["@operator"]               = {fg = C.wrong, style = "NONE"},
+    -- ["@punctuation.delimiter"]  = {fg = C.wrong, style = "NONE"},
+    -- ["@punctuation.bracket"]    = {fg = C.wrong, style = "NONE"},
+    -- ["@punctuation.special"]    = {fg = C.wrong, style = "NONE"},
+    -- ["@string.regex"]           = {fg = C.wrong, style = "NONE"},
+    -- ["@string.escape"]          = {fg = C.wrong, style = "NONE"},
+    -- ["@constructor.lua"]        = {fg = C.wrong, style = "NONE"},
+    -- ["@constructor"]            = {fg = C.wrong, style = "NONE"},
+    -- ["@parameter"]              = {fg = C.wrong, style = "NONE"},
+    -- ["@keyword.operator"]       = {fg = C.wrong, style = "NONE"},
+    -- ["@keyword.return"]         = {fg = C.wrong, style = "NONE"},
+    -- ["@keyword.luap"]           = {fg = C.wrong, style = "NONE"},
+    -- ["@exception"]              = {fg = C.wrong, style = "NONE"},
+    -- ["@attribute"]              = {fg = C.wrong, style = "NONE"},
+    -- ["@variable"]               = {fg = C.wrong, style = "NONE"},
+    -- ["@variable.builtin"]       = {fg = C.wrong, style = "NONE"},
+    -- ["@symbol"]                 = {fg = C.wrong, style = "NONE"},
+    -- ["@PreProc"]                = {fg = C.wrong, style = "NONE"},
+
+    -- Mainly for markup languages.
+    ["@text"]                  = {fg = C.fg},  -- non-structured text
+    ["@text.strong"]           = {style = "bold"},  -- bold text
+    ["@text.emphasis"]         = {style = "italic"},  -- text with emphasis
+    ["@text.underline"]        = {style = "underline"},  -- underlined text
+    ["@text.strike"]           = {style = "strikethrough"},  -- strikethrough text
+
+    -- ["@text.title"]            = {fg = C.wrong, style = "bold"},  -- text that is part of a title
+    -- ["@text.quote"]            = {fg = C.wrong, style = "NONE"},  -- text quotations
+    -- ["@text.uri"]              = {fg = C.wrong, style = "NONE"},  -- URIs (e.g. hyperlinks)
+    -- ["@text.math"]             = {fg = C.wrong, style = "NONE"},  -- math environments (e.g. `$ ... $` in LaTeX)
+    -- ["@text.environment"]      = {fg = C.wrong, style = "NONE"},  -- text environments of markup languages
+    -- ["@text.environment.name"] = {fg = C.wrong, style = "NONE"},  -- text indicating the type of an environment
+    -- ["@text.reference"]        = {fg = C.wrong, style = "NONE"},  -- text references, footnotes, citations, etc.
+    -- ["@text.literal"]          = {fg = C.wrong, style = "NONE"},  -- literal or verbatim text (e.g., inline code)
+    -- ["@text.literal.block"]    = {fg = C.wrong, style = "NONE"},  -- literal or verbatim text as a stand-alone block ; (use priority 90 for blocks with injections)
+    -- ["@text.todo"]             = {fg = C.wrong, style = "NONE"},  -- todo notes
+    -- ["@text.note"]             = {fg = C.wrong, style = "NONE"},  -- info notes
+    -- ["@text.warning"]          = {fg = C.wrong, style = "NONE"},  -- warning notes
+    -- ["@text.danger"]           = {fg = C.wrong, style = "NONE"},  -- danger/error notes
+    -- ["@text.diff.add"]         = {fg = C.wrong, style = "NONE"},  -- added text (for diff files)
+    -- ["@text.diff.delete"]      = {fg = C.wrong, style = "NONE"},  -- deleted text (for diff files)
+    -- -- Used for XML-like tags.
+    -- ["@tag"]                   = {fg = C.wrong, style = "NONE"},  -- XML tag names
+    -- ["@tag.attribute"]         = {fg = C.wrong, style = "NONE"},  -- XML tag attributes
+    -- ["@tag.delimiter"]         = {fg = C.wrong, style = "NONE"},  -- XML tag delimiters
+
+    -- cterm={attr-list}			*attr-list* *highlight-cterm* *E418*
+    -- 	attr-list is a comma-separated list (without spaces) of the
+    -- 	following items (in any order):
+    -- 		bold
+    -- 		underline
+    -- 		undercurl	curly underline
+    -- 		underdouble	double underline
+    -- 		underdotted	dotted underline
+    -- 		underdashed	dashed underline
+    -- 		strikethrough
+    -- 		reverse
+    -- 		inverse		same as reverse
+    -- 		italic
+    -- 		standout
+    -- 		altfont
+    -- 		nocombine	override attributes instead of combining them
+    -- 		NONE		no attributes used (used to reset it)
+
+    -- Neorg
+
+    -- -- Heading
+    -- ["@neorg.headings.1.title.norg"]    = {fg = C.info_yellow, style="NONE"},
+    -- ["@neorg.headings.1.prefix.norg"]   = {fg = C.info_yellow, style="NONE"},
+    -- ["@neorg.links.location.heading.1.norg"] = {fg = C.info_yellow, style="NONE"},
+    -- ["@neorg.links.location.heading.1.prefix.norg"] = {fg = C.info_yellow, style="NONE"},
+
+
+
+
+    ["@neorg.links.location.external_file.prefix.norg"] = {fg = C.link, style="NONE"},
+    ["@neorg.links.location.external_file.norg"]        = {fg = C.link, style="NONE"},
+    ["@neorg.links.description.norg"]     = {fg = C.nlink, style="NONE"},
+    ["@neorg.links.declaration.norg"]     = {fg = C.nlink, style="NONE"},
+    ["@neorg.links.file.norg"]            = {fg = C.nlink, style="NONE"},
+    ["@neorg.anchors.declaration.norg"]   = {fg = C.nlink, style="NONE"},
+    ["@neorg.anchors.description.norg"]   = {fg = C.nlink, style="NONE"},
+    ["@neorg.markup.verbatim"]            = {fg = C.green, style="NONE"},
+    ["@neorg.delimiters.horizontal_line"] = {fg = C.gray, style="bold"},
+    ["@neorg.todo_items.pending.norg"]    = {fg = C.blue, style="NONE"},
+    ["@neorg.todo_items.urgent.norg"]     = {fg = C.red, style="NONE"},
+
+    -- -- Code block
+    -- ["@neorg.tags.ranged_verbatim.begin.norg"]           = {fg = C.context, style="NONE"},
+    -- ["@neorg.tags.ranged_verbatim.end.norg"]             = {fg = C.context, style="NONE"},
+    -- ["@neorg.tags.ranged_verbatim.name.word.norg"]       = {fg = C.context, style="NONE"},
+    -- ["@neorg.tags.ranged_verbatim.parameters.word.norg"] = {fg = C.context, style="NONE"},
+
+    -- ["@neorg.headings.1.prefix"]                    = {fg = C.heading1, style="bold"},
+    -- ["@neorg.headings.1.title.norg"]                = {fg = C.heading1, style="bold"},
+    -- ["@neorg.links.location.heading.1.norg"]        = {fg = C.heading1, style="bold"},
+    -- ["@neorg.links.location.heading.1.prefix.norg"] = {fg = C.heading1, style="bold"},
+    -- ["@neorg.headings.2.prefix"]                    = {fg = C.heading2, style="bold"},
+    -- ["@neorg.headings.2.title.norg"]                = {fg = C.heading2, style="bold"},
+    -- ["@neorg.links.location.heading.2.norg"]        = {fg = C.heading2, style="bold"},
+    -- ["@neorg.links.location.heading.2.prefix.norg"] = {fg = C.heading2, style="bold"},
+    -- ["@neorg.headings.3.prefix"]                    = {fg = C.heading3, style="bold"},
+    -- ["@neorg.headings.3.title.norg"]                = {fg = C.heading3, style="bold"},
+    -- ["@neorg.links.location.heading.3.norg"]        = {fg = C.heading3, style="bold"},
+    -- ["@neorg.links.location.heading.3.prefix.norg"] = {fg = C.heading3, style="bold"},
+    -- ["@neorg.headings.4.prefix"]                    = {fg = C.heading4, style="bold"},
+    -- ["@neorg.headings.4.title.norg"]                = {fg = C.heading4, style="bold"},
+    -- ["@neorg.links.location.heading.4.norg"]        = {fg = C.heading4, style="bold"},
+    -- ["@neorg.links.location.heading.4.prefix.norg"] = {fg = C.heading4, style="bold"},
+    -- ["@neorg.headings.5.prefix"]                    = {fg = C.heading5, style="bold"},
+    -- ["@neorg.headings.5.title.norg"]                = {fg = C.heading5, style="bold"},
+    -- ["@neorg.links.location.heading.5.norg"]        = {fg = C.heading5, style="bold"},
+    -- ["@neorg.links.location.heading.5.prefix.norg"] = {fg = C.heading5, style="bold"},
+    -- ["@neorg.headings.6.prefix"]                    = {fg = C.heading6, style="bold"},
+    -- ["@neorg.headings.6.title.norg"]                = {fg = C.heading6, style="bold"},
+    -- ["@neorg.links.location.heading.6.norg"]        = {fg = C.heading6, style="bold"},
+    -- ["@neorg.links.location.heading.6.prefix.norg"] = {fg = C.heading6, style="bold"},
+
+    ["@neorg.headings.1.prefix"]                    = {fg = C.heading1, style="bold"},
+    ["@neorg.headings.1.title.norg"]                = {fg = C.heading1, style="bold"},
+    ["@neorg.links.location.heading.1.norg"]        = {fg = C.heading1, style="NONE"},
+    ["@neorg.links.location.heading.1.prefix.norg"] = {fg = C.heading1, style="NONE"},
+    ["@neorg.headings.2.prefix"]                    = {fg = C.heading2, style="bold"},
+    ["@neorg.headings.2.title.norg"]                = {fg = C.heading2, style="bold"},
+    ["@neorg.links.location.heading.2.norg"]        = {fg = C.heading2, style="NONE"},
+    ["@neorg.links.location.heading.2.prefix.norg"] = {fg = C.heading2, style="NONE"},
+    ["@neorg.headings.3.prefix"]                    = {fg = C.heading3, style="bold"},
+    ["@neorg.headings.3.title.norg"]                = {fg = C.heading3, style="bold"},
+    ["@neorg.links.location.heading.3.norg"]        = {fg = C.heading3, style="NONE"},
+    ["@neorg.links.location.heading.3.prefix.norg"] = {fg = C.heading3, style="NONE"},
+    ["@neorg.headings.4.prefix"]                    = {fg = C.heading4, style="bold"},
+    ["@neorg.headings.4.title.norg"]                = {fg = C.heading4, style="bold"},
+    ["@neorg.links.location.heading.4.norg"]        = {fg = C.heading4, style="NONE"},
+    ["@neorg.links.location.heading.4.prefix.norg"] = {fg = C.heading4, style="NONE"},
+    ["@neorg.headings.5.prefix"]                    = {fg = C.heading5, style="bold"},
+    ["@neorg.headings.5.title.norg"]                = {fg = C.heading5, style="bold"},
+    ["@neorg.links.location.heading.5.norg"]        = {fg = C.heading5, style="NONE"},
+    ["@neorg.links.location.heading.5.prefix.norg"] = {fg = C.heading5, style="NONE"},
+    ["@neorg.headings.6.prefix"]                    = {fg = C.heading6, style="bold"},
+    ["@neorg.headings.6.title.norg"]                = {fg = C.heading6, style="bold"},
+    ["@neorg.links.location.heading.6.norg"]        = {fg = C.heading6, style="NONE"},
+    ["@neorg.links.location.heading.6.prefix.norg"] = {fg = C.heading6, style="NONE"},
+
+
+    -- ["@neorg.headings.1.prefix"]                    = {fg = C.cyan, style="bold"},
+    -- ["@neorg.headings.1.title.norg"]                = {fg = C.cyan, style="bold"},
+    -- ["@neorg.links.location.heading.1.norg"]        = {fg = C.cyan, style="NONE"},
+    -- ["@neorg.links.location.heading.1.prefix.norg"] = {fg = C.cyan, style="NONE"},
+    -- ["@neorg.headings.2.prefix"]                    = {fg = C.blue, style="bold"},
+    -- ["@neorg.headings.2.title.norg"]                = {fg = C.blue, style="bold"},
+    -- ["@neorg.links.location.heading.2.norg"]        = {fg = C.blue, style="NONE"},
+    -- ["@neorg.links.location.heading.2.prefix.norg"] = {fg = C.blue, style="NONE"},
+    -- ["@neorg.headings.3.prefix"]                    = {fg = C.purple, style="bold"},
+    -- ["@neorg.headings.3.title.norg"]                = {fg = C.purple, style="bold"},
+    -- ["@neorg.links.location.heading.3.norg"]        = {fg = C.purple, style="NONE"},
+    -- ["@neorg.links.location.heading.3.prefix.norg"] = {fg = C.purple, style="NONE"},
+    -- ["@neorg.headings.4.prefix"]                    = {fg = C.red, style="bold"},
+    -- ["@neorg.headings.4.title.norg"]                = {fg = C.red, style="bold"},
+    -- ["@neorg.links.location.heading.4.norg"]        = {fg = C.red, style="NONE"},
+    -- ["@neorg.links.location.heading.4.prefix.norg"] = {fg = C.red, style="NONE"},
+    -- ["@neorg.headings.5.prefix"]                    = {fg = C.info_yellow, style="bold"},
+    -- ["@neorg.headings.5.title.norg"]                = {fg = C.info_yellow, style="bold"},
+    -- ["@neorg.links.location.heading.5.norg"]        = {fg = C.info_yellow, style="NONE"},
+    -- ["@neorg.links.location.heading.5.prefix.norg"] = {fg = C.info_yellow, style="NONE"},
+    -- ["@neorg.headings.6.prefix"]                    = {fg = C.yellow, style="bold"},
+    -- ["@neorg.headings.6.title.norg"]                = {fg = C.yellow, style="bold"},
+    -- ["@neorg.links.location.heading.6.norg"]        = {fg = C.yellow, style="NONE"},
+    -- ["@neorg.links.location.heading.6.prefix.norg"] = {fg = C.yellow, style="NONE"},
+
+
 
 }
 

@@ -57,6 +57,7 @@ local highlights = {
     MoreMsg = {fg = C.orange, },
     Question = {fg = C.orange, },
     EndOfBuffer = {fg = C.bg, },
+
     NonText = {fg = C.context, style = "NONE",},
     Variable = {fg = C.cyan, style = "NONE",},
     String = {fg = C.green, style = "NONE",},
@@ -66,6 +67,7 @@ local highlights = {
     Boolean = {fg = C.orange, style = "NONE",},
     Float = {fg = C.orange, style = "NONE",},
     Identifier = {fg = C.fg, style = "NONE",},
+
     Function = {fg = C.blue, style = "NONE",},
     Operator = {fg = C.purple, style = "NONE",},
     Type = {fg = C.yellow, style = "NONE",},
@@ -84,6 +86,7 @@ local highlights = {
     Macro = {fg = C.purple, style = "NONE",},
     PreCondit = {fg = C.purple, style = "NONE",},
     Special = {fg = C.purple, style = "NONE",},
+
     SpecialChar = {fg = C.fg, style = "NONE",},
     Tag = {fg = C.blue, style = "NONE",},
     Debug = {fg = C.red, },
@@ -200,6 +203,7 @@ local highlights = {
     -- diffLine      = {fg = C.sign_delete, bg = C.bg, style = "NONE", },
     -- diffIndexLine = {fg = C.sign_delete, bg = C.bg, style = "NONE", },
     -- diffComment   = {fg = C.sign_delete, bg = C.bg, style = "NONE", },
+
 
 }
 
