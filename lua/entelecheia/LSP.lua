@@ -129,11 +129,12 @@ local LSP = {
     StatusLineTermNC    = {fg = C.bg, },
 
 
-    CodiVirtualText = {fg = C.hint_blue, },
-    IndentBlanklineContextChar = {fg = C.dark_gray, },
+    IndentBlanklineContextChar = {fg = C.gray, },
     IndentBlanklineChar = {fg = C.dark_gray, },
     IndentBlanklineSpaceChar = {fg = C.dark_gray, },
     IndentBlanklineSpaceCharBlankline = {fg = C.info_yellow, },
+
+    CodiVirtualText = {fg = C.hint_blue, },
     DashboardHeader = {fg = C.blue, },
     DashboardCenter = {fg = C.purple, },
     DashboardFooter = {fg = C.cyan, },

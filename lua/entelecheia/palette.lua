@@ -18,25 +18,13 @@ local colors = {
     brightBlue    = "#298CC2",
     brightPurple  = "#B352BC",
     brightCyan    = "#099F93",
-
+    qfLineYellow  = "#998A5C",
     -- Link
 
     link          = "#80A0FF",
     nlink         = "#51A9A2",
 
-    -- nlink         = "#d19a66",
-    -- nlink         = "#CB8D52",
-    -- nlink         = "#53A3C6",
-    -- nlink         = "#526DC5",
-    -- nlink         = "#C55284",
-    -- nlink         = "#9d81ba",
-    -- nlink         = "#B388E1",
-
-
     -- Heading
-
-    -- heading1          = "#d19a66",
-    -- heading1          = "#C9884A",
 
     heading1          = "#CD8F56",
     heading2          = "#D67A7A",
@@ -44,34 +32,6 @@ local colors = {
     heading4          = "#AD83D8",
     heading5          = "#8B8BDA";
     heading6          = "#6599CD";
-
-    -- heading1          = "#6599CD";
-    -- heading2          = "#8B8BDA";
-    -- heading3          = "#AD83D8",
-    -- heading4          = "#D477A6",
-    -- heading5          = "#D67A7A",
-    -- heading6          = "#C9884A",
-
-    -- heading1          = "#d19a66",
-    -- heading2          = "#D98282",
-    -- heading3          = "#D882AD",
-    -- heading4          = "#B38BDA",
-    -- heading5          = "#9292DD";
-    -- heading6          = "#6D9ED0";
-
-    -- heading1          = "#57A3CB",
-    -- heading2          = "#35ACA2",
-    -- heading3          = "#36B079",
-    -- heading4          = "#5CAC35",
-    -- heading5          = "#81A834";
-    -- heading6          = "#9F9F32";
-
-    -- heading6          = "#d19a66";
-    -- heading1          = "#C59A44",
-    -- heading2          = "#9F9F32",
-    -- heading3          = "#81A834",
-    -- heading4          = "#5DAB36",
-    -- heading5          = "#57A3CB";
 
     -- Oranges for numbers, search, and modified accent
 
