@@ -18,7 +18,10 @@ local colors = {
     brightBlue    = "#298CC2",
     brightPurple  = "#B352BC",
     brightCyan    = "#099F93",
-    qfLineYellow  = "#998A5C",
+
+    darkred       = "#58232A",
+    darkyellow    = "#998A5C",
+
     -- Link
 
     link          = "#80A0FF",

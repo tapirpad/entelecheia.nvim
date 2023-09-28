@@ -128,11 +128,9 @@ local LSP = {
     StatusLineTerm      = {fg = C.bg, },
     StatusLineTermNC    = {fg = C.bg, },
 
-
-    IndentBlanklineContextChar = {fg = C.gray, },
-    IndentBlanklineChar = {fg = C.dark_gray, },
-    IndentBlanklineSpaceChar = {fg = C.dark_gray, },
-    IndentBlanklineSpaceCharBlankline = {fg = C.info_yellow, },
+    IblIndent = {fg = C.dark_gray, },
+    IblWhitespace = {fg = C.dark_gray, },
+    IblScope = {fg = C.context, },
 
     CodiVirtualText = {fg = C.hint_blue, },
     DashboardHeader = {fg = C.blue, },
