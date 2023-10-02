@@ -64,24 +64,31 @@ local colors = {
 
     -- LSP info, warning, error
 
-    hint_blue     = "#53A3C6",
-    info          = "#959393",
-    hint          = "#959393",
-    info_yellow   = "#d19a66",
-    warn          = "#BFA25F",
-    warning_orange= "#BFA25F",
-    error_red     = "#B85347",
-    error         = "#B85347",
+    hint_blue      = "#53A3C6",
+    info           = "#959393",
+    hint           = "#959393",
+    info_yellow    = "#d19a66",
+    warn           = "#BFA25F",
+    warning_orange = "#BFA25F",
+    error_red      = "#B85347",
+    error          = "#B85347",
 
-    cyan_test     = "#51A9A2",
-    purple_test   = "#B46CBC",
+    cyan_test      = "#51A9A2",
+    purple_test    = "#B46CBC",
 
     -- Git sign
 
-    sign_add      = "#587c0c",
-    sign_change   = "#0c7d9d",
-    sign_delete   = "#be5046",
-    wrong         = "#94151b",
+    sign_add_bg    = "#001F00",
+    sign_change_bg = "#030F21",
+    sign_delete_bg = "#2E0001",
+
+    sign_add_w     = "#003800",
+    sign_change_w  = "#032E59",
+    sign_delete_w  = "#570001",
+
+    sign_add       = "#007500",
+    sign_change    = "#035DD3",
+    sign_delete    = "#BD0003",
 
     -- Untouched yet
 
@@ -92,6 +99,7 @@ local colors = {
     light_red     = "#be5046",
     ui_blue       = "#264F78",
     modfg         = "#fabd2f",
+    wrong         = "#94151b",
 
 }
 

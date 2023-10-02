@@ -145,6 +145,47 @@ local LSP = {
     FocusedSymbol = {fg = C.purple, style = "bold", },
     SymbolsOutlineConnector = {fg = C.context, },
 
+    -- Gitsign indicator and line number
+    GitSignsAdd      = {fg = C.sign_add,    bg = C.bg, style = "NONE", },
+    GitSignsChange   = {fg = C.sign_change, bg = C.bg, style = "NONE", },
+    GitSignsDelete   = {fg = C.sign_delete, bg = C.bg, style = "NONE", },
+    GitSignsAddNr    = {fg = C.sign_add,    bg = C.bg, style = "NONE", },
+    GitSignsChangeNr = {fg = C.sign_change, bg = C.bg, style = "NONE", },
+    GitSignsDeleteNr = {fg = C.sign_delete, bg = C.bg, style = "NONE", },
+    -- Gitsign inline
+    GitSignsAddLn    = {bg = C.sign_add_bg,    },
+    GitSignsChangeLn = {bg = C.sign_change_bg, },
+    GitSignsDeleteLn = {bg = C.sign_delete_bg, },
+    -- Gitsign preview
+    GitSignsAddPreview     = {fg = C.green,    bg = C.sign_add_bg,    style = "NONE"},
+    GitSignsDeletePreview  = {fg = C.red, bg = C.sign_delete_bg, sylte = "NONE"},
+    -- Gitsign word diff
+    GitSignsAddLnInline    = {bg = C.sign_add_w,    style = "bold", },
+    GitSignsChangeLnInline = {bg = C.sign_change_w, style = "bold", },
+    GitSignsDeleteLnInline = {bg = C.sign_delete_w, style = "bold", },
+    -- Gitsign word diff in preview
+    GitSignsAddInline      = {bg = C.sign_add_w,    style = "bold", },
+    GitSignsChangeInline   = {bg = C.sign_change_w, style = "bold", },
+    GitSignsDeleteInline   = {bg = C.sign_delete_w, style = "bold", },
+    -- Gitsign word diff in virt line
+    GitSignsAddVirtLnInline    = {fg = C.green,    bg = C.bg, style = "NONE", },
+    GitSignsChangeVirtLnInline = {fg = C.blue, bg = C.bg, style = "NONE", },
+    GitSignsDeleteVirtLnInline = {fg = C.red, bg = C.bg, style = "NONE", },
+
+    -- Diffview use this
+    DiffAdd       = {bg = C.sign_add_bg, style = "NONE"},
+    DiffChange    = {bg = C.sign_change_bg, style = "NONE"},
+    DiffDelete    = {fg = C.red, bg = C.sign_delete_bg, sylte = "NONE"},
+    DiffText      = {bg = C.sign_change_w, sylte = "bold"},
+
+    -- Neogit
+    NeogitHunkHeader          = {fg = C.fg, bg = C.sign_change_bg, sylte = "bold"},
+    NeogitHunkHeaderHighlight = {fg = C.blue, bg = C.sign_change_bg, sylte = "bold"},
+    NeogitDiffAdd          = {fg = C.green, bg = C.sign_add_bg, sylte = "bold"},
+    NeogitDiffAddHighlight = {fg = C.green, bg = C.sign_add_bg, sylte = "bold"},
+    NeogitDiffDelete          = {fg = C.red, bg = C.sign_delete_bg, sylte = "bold"},
+    NeogitDiffDeleteHighlight = {fg = C.red, bg = C.sign_delete_bg, sylte = "bold"},
+
     -- BufferLineSeparatorVisible = {fg = C.gray, bg = C.alt_bg, style = "NONE"},
     -- BufferLineDiagnosticVisible = {fg = C.gray, bg = C.alt_bg, style = "NONE"},
     -- BufferLineDiagnostic = {fg = C.gray, bg = C.alt_bg, style = "NONE"},
@@ -251,24 +292,6 @@ local LSP = {
     -- ["@tag.attribute"]         = {fg = C.wrong, style = "NONE"},  -- XML tag attributes
     -- ["@tag.delimiter"]         = {fg = C.wrong, style = "NONE"},  -- XML tag delimiters
 
-    -- cterm={attr-list}			*attr-list* *highlight-cterm* *E418*
-    -- 	attr-list is a comma-separated list (without spaces) of the
-    -- 	following items (in any order):
-    -- 		bold
-    -- 		underline
-    -- 		undercurl	curly underline
-    -- 		underdouble	double underline
-    -- 		underdotted	dotted underline
-    -- 		underdashed	dashed underline
-    -- 		strikethrough
-    -- 		reverse
-    -- 		inverse		same as reverse
-    -- 		italic
-    -- 		standout
-    -- 		altfont
-    -- 		nocombine	override attributes instead of combining them
-    -- 		NONE		no attributes used (used to reset it)
-
     -- Neorg
 
     -- -- Heading
@@ -276,9 +299,6 @@ local LSP = {
     -- ["@neorg.headings.1.prefix.norg"]   = {fg = C.info_yellow, style="NONE"},
     -- ["@neorg.links.location.heading.1.norg"] = {fg = C.info_yellow, style="NONE"},
     -- ["@neorg.links.location.heading.1.prefix.norg"] = {fg = C.info_yellow, style="NONE"},
-
-
-
 
     ["@neorg.links.location.external_file.prefix.norg"] = {fg = C.link, style="NONE"},
     ["@neorg.links.location.external_file.norg"]        = {fg = C.link, style="NONE"},
@@ -297,31 +317,6 @@ local LSP = {
     -- ["@neorg.tags.ranged_verbatim.end.norg"]             = {fg = C.context, style="NONE"},
     -- ["@neorg.tags.ranged_verbatim.name.word.norg"]       = {fg = C.context, style="NONE"},
     -- ["@neorg.tags.ranged_verbatim.parameters.word.norg"] = {fg = C.context, style="NONE"},
-
-    -- ["@neorg.headings.1.prefix"]                    = {fg = C.heading1, style="bold"},
-    -- ["@neorg.headings.1.title.norg"]                = {fg = C.heading1, style="bold"},
-    -- ["@neorg.links.location.heading.1.norg"]        = {fg = C.heading1, style="bold"},
-    -- ["@neorg.links.location.heading.1.prefix.norg"] = {fg = C.heading1, style="bold"},
-    -- ["@neorg.headings.2.prefix"]                    = {fg = C.heading2, style="bold"},
-    -- ["@neorg.headings.2.title.norg"]                = {fg = C.heading2, style="bold"},
-    -- ["@neorg.links.location.heading.2.norg"]        = {fg = C.heading2, style="bold"},
-    -- ["@neorg.links.location.heading.2.prefix.norg"] = {fg = C.heading2, style="bold"},
-    -- ["@neorg.headings.3.prefix"]                    = {fg = C.heading3, style="bold"},
-    -- ["@neorg.headings.3.title.norg"]                = {fg = C.heading3, style="bold"},
-    -- ["@neorg.links.location.heading.3.norg"]        = {fg = C.heading3, style="bold"},
-    -- ["@neorg.links.location.heading.3.prefix.norg"] = {fg = C.heading3, style="bold"},
-    -- ["@neorg.headings.4.prefix"]                    = {fg = C.heading4, style="bold"},
-    -- ["@neorg.headings.4.title.norg"]                = {fg = C.heading4, style="bold"},
-    -- ["@neorg.links.location.heading.4.norg"]        = {fg = C.heading4, style="bold"},
-    -- ["@neorg.links.location.heading.4.prefix.norg"] = {fg = C.heading4, style="bold"},
-    -- ["@neorg.headings.5.prefix"]                    = {fg = C.heading5, style="bold"},
-    -- ["@neorg.headings.5.title.norg"]                = {fg = C.heading5, style="bold"},
-    -- ["@neorg.links.location.heading.5.norg"]        = {fg = C.heading5, style="bold"},
-    -- ["@neorg.links.location.heading.5.prefix.norg"] = {fg = C.heading5, style="bold"},
-    -- ["@neorg.headings.6.prefix"]                    = {fg = C.heading6, style="bold"},
-    -- ["@neorg.headings.6.title.norg"]                = {fg = C.heading6, style="bold"},
-    -- ["@neorg.links.location.heading.6.norg"]        = {fg = C.heading6, style="bold"},
-    -- ["@neorg.links.location.heading.6.prefix.norg"] = {fg = C.heading6, style="bold"},
 
     ["@neorg.headings.1.prefix"]                    = {fg = C.heading1, style="bold"},
     ["@neorg.headings.1.title.norg"]                = {fg = C.heading1, style="bold"},
@@ -347,33 +342,6 @@ local LSP = {
     ["@neorg.headings.6.title.norg"]                = {fg = C.heading6, style="bold"},
     ["@neorg.links.location.heading.6.norg"]        = {fg = C.heading6, style="NONE"},
     ["@neorg.links.location.heading.6.prefix.norg"] = {fg = C.heading6, style="NONE"},
-
-
-    -- ["@neorg.headings.1.prefix"]                    = {fg = C.cyan, style="bold"},
-    -- ["@neorg.headings.1.title.norg"]                = {fg = C.cyan, style="bold"},
-    -- ["@neorg.links.location.heading.1.norg"]        = {fg = C.cyan, style="NONE"},
-    -- ["@neorg.links.location.heading.1.prefix.norg"] = {fg = C.cyan, style="NONE"},
-    -- ["@neorg.headings.2.prefix"]                    = {fg = C.blue, style="bold"},
-    -- ["@neorg.headings.2.title.norg"]                = {fg = C.blue, style="bold"},
-    -- ["@neorg.links.location.heading.2.norg"]        = {fg = C.blue, style="NONE"},
-    -- ["@neorg.links.location.heading.2.prefix.norg"] = {fg = C.blue, style="NONE"},
-    -- ["@neorg.headings.3.prefix"]                    = {fg = C.purple, style="bold"},
-    -- ["@neorg.headings.3.title.norg"]                = {fg = C.purple, style="bold"},
-    -- ["@neorg.links.location.heading.3.norg"]        = {fg = C.purple, style="NONE"},
-    -- ["@neorg.links.location.heading.3.prefix.norg"] = {fg = C.purple, style="NONE"},
-    -- ["@neorg.headings.4.prefix"]                    = {fg = C.red, style="bold"},
-    -- ["@neorg.headings.4.title.norg"]                = {fg = C.red, style="bold"},
-    -- ["@neorg.links.location.heading.4.norg"]        = {fg = C.red, style="NONE"},
-    -- ["@neorg.links.location.heading.4.prefix.norg"] = {fg = C.red, style="NONE"},
-    -- ["@neorg.headings.5.prefix"]                    = {fg = C.info_yellow, style="bold"},
-    -- ["@neorg.headings.5.title.norg"]                = {fg = C.info_yellow, style="bold"},
-    -- ["@neorg.links.location.heading.5.norg"]        = {fg = C.info_yellow, style="NONE"},
-    -- ["@neorg.links.location.heading.5.prefix.norg"] = {fg = C.info_yellow, style="NONE"},
-    -- ["@neorg.headings.6.prefix"]                    = {fg = C.yellow, style="bold"},
-    -- ["@neorg.headings.6.title.norg"]                = {fg = C.yellow, style="bold"},
-    -- ["@neorg.links.location.heading.6.norg"]        = {fg = C.yellow, style="NONE"},
-    -- ["@neorg.links.location.heading.6.prefix.norg"] = {fg = C.yellow, style="NONE"},
-
 
 
 }

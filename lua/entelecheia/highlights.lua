@@ -108,24 +108,6 @@ local highlights = {
     Todo = {fg = C.red, bg = C.bg, style = "NONE", },
     Error = {fg = C.error_red, bg = C.bg, style = "NONE", },
 
-    -- TabLine        = {fg = C.fg, bg = C.dark, },
-    -- TabLineSel     = {fg = C.bg, bg = C.green, },
-    -- TabLineFill    = {fg = C.bg, bg = C.green, },
-    -- TabLineMod     = {fg = C.info_yellow, bg = C.dark, },
-    -- TabLineModSel  = {fg = C.bg, bg = C.yellow_orange, },
-    -- TabLineDiag    = {fg = C.red, bg = C.dark, },
-    -- TabLineDiagSel = {fg = C.bg, bg = C.green, },
-    -- TabLineDiagModSel = {fg = C.bg, bg = C.yellow_orange, },
-
-    -- TabLine        = {fg = C.fg, bg = C.dark, },
-    -- TabLineSel     = {fg = C.black, bg = C.green, },
-    -- TabLineFill    = {fg = C.black, bg = C.green, },
-    -- TabLineMod     = {fg = C.info_yellow, bg = C.dark, },
-    -- TabLineModSel  = {fg = C.black, bg = C.yellow_orange, },
-    -- TabLineDiag    = {fg = C.red, bg = C.dark, },
-    -- TabLineDiagSel = {fg = C.black, bg = C.green, },
-    -- TabLineDiagModSel = {fg = C.black, bg = C.yellow_orange, },
-
     TabLine        = {fg = C.fg, bg = C.dark, },
     TabLineSel     = {fg = C.black, bg = C.green, style="bold"},
     TabLineFill    = {fg = C.black, bg = C.green, style="bold"},
@@ -134,69 +116,6 @@ local highlights = {
     TabLineDiag    = {fg = C.red, bg = C.dark, },
     TabLineDiagSel = {fg = C.black, bg = C.green, style="bold" },
     TabLineDiagModSel = {fg = C.black, bg = C.yellow_orange, style="bold" },
-
-    GitSignsAdd      = {fg = C.sign_add,    bg = C.bg, style = "NONE", },
-    GitSignsChange   = {fg = C.sign_change, bg = C.bg, style = "NONE", },
-    GitSignsDelete   = {fg = C.sign_delete, bg = C.bg, style = "NONE", },
-    GitSignsAddNr    = {fg = C.sign_add,    bg = C.bg, style = "NONE", },
-    GitSignsChangeNr = {fg = C.sign_change, bg = C.bg, style = "NONE", },
-    GitSignsDeleteNr = {fg = C.sign_delete, bg = C.bg, style = "NONE", },
-
-    -- GitSignsAddLn    = {fg = C.cursor_fg,   bg = C.sign_add,    style = "NONE", },
-    -- GitSignsChangeLn = {fg = C.cursor_fg,   bg = C.sign_change, style = "NONE", },
-    -- GitSignsDeleteLn = {fg = C.cursor_fg,   bg = C.sign_delete, style = "NONE", },
-
-    GitSignsAddLn    = {fg = C.cursor_fg,   bg = C.sign_add,    style = "bold", },
-    GitSignsChangeLn = {fg = C.cursor_fg,   bg = C.sign_change, style = "bold", },
-    GitSignsDeleteLn = {fg = C.cursor_fg,   bg = C.sign_delete, style = "bold", },
-
-    -- GitSignsAddInline      = {bg = C.sign_add,    fg = C.cursor_fg,   style = "italic", },
-    -- GitSignsChangeInline   = {bg = C.sign_change, fg = C.cursor_fg,   style = "italic", },
-    -- GitSignsDeleteInline   = {bg = C.sign_delete, fg = C.cursor_fg,   style = "italic", },
-    -- GitSignsAddNrInline    = {bg = C.sign_add,    fg = C.cursor_fg,   style = "italic", },
-    -- GitSignsChangeNrInline = {bg = C.sign_change, fg = C.cursor_fg,   style = "italic", },
-    -- GitSignsDeleteNrInline = {bg = C.sign_delete, fg = C.cursor_fg,   style = "italic", },
-    -- GitSignsAddLnInline    = {fg = C.cursor_fg,   bg = C.sign_add,    style = "italic", },
-    -- GitSignsChangeLnInline = {fg = C.cursor_fg,   bg = C.sign_change, style = "italic", },
-    -- GitSignsDeleteLnInline = {fg = C.cursor_fg,   bg = C.sign_delete, style = "italic", },
-
-    GitSignsAddInline      = {bg = C.sign_add,    fg = C.cursor_fg,   style = "bold,underline", },
-    GitSignsChangeInline   = {bg = C.sign_change, fg = C.cursor_fg,   style = "bold,underline", },
-    GitSignsDeleteInline   = {bg = C.sign_delete, fg = C.cursor_fg,   style = "bold,underline", },
-    GitSignsAddNrInline    = {bg = C.sign_add,    fg = C.cursor_fg,   style = "bold,underline", },
-    GitSignsChangeNrInline = {bg = C.sign_change, fg = C.cursor_fg,   style = "bold,underline", },
-    GitSignsDeleteNrInline = {bg = C.sign_delete, fg = C.cursor_fg,   style = "bold,underline", },
-    GitSignsAddLnInline    = {fg = C.cursor_fg,   bg = C.sign_add,    style = "bold,underline", },
-    GitSignsChangeLnInline = {fg = C.cursor_fg,   bg = C.sign_change, style = "bold,underline", },
-    GitSignsDeleteLnInline = {fg = C.cursor_fg,   bg = C.sign_delete, style = "bold,underline", },
-
-    GitSignsAddVirtLnInline    = {fg = C.sign_add,    bg = C.bg, style = "NONE", },
-    GitSignsChangeVirtLnInline = {fg = C.sign_change, bg = C.bg, style = "NONE", },
-    GitSignsDeleteVirtLnInline = {fg = C.sign_delete, bg = C.bg, style = "NONE", },
-
-    -- DiffAdd       = {fg = C.cursor_fg, bg = C.sign_add, style = "NONE" },
-    -- DiffChange    = {fg = C.cursor_fg, bg = C.sign_change, style = "NONE", },
-    -- DiffDelete    = {fg = C.cursor_fg, bg = C.sign_delete, sylte = "NONE"},
-
-    DiffAdd       = {fg = C.cursor_fg, bg = C.sign_add, style = "bold" },
-    DiffChange    = {fg = C.cursor_fg, bg = C.sign_change, style = "bold", },
-    DiffDelete    = {fg = C.cursor_fg, bg = C.sign_delete, sylte = "bold"},
-
-    DiffViewNormal              = {fg = C.fg, bg = C.bg, },
-    DiffviewStatusAdded         = {fg = C.sign_add, },
-    DiffviewStatusModified      = {fg = C.sign_change, },
-    DiffviewStatusRenamed       = {fg = C.sign_change, },
-    DiffviewStatusDeleted       = {fg = C.sign_delete, },
-    DiffviewFilePanelInsertion  = {fg = C.sign_add, },
-    DiffviewFilePanelDeletion   = {fg = C.sign_delete, },
-    DiffviewVertSplit           = {fg = C.fg,       bg = C.bg, },
-    diffAdded                   = {fg = C.sign_add, },
-    diffRemoved                 = {fg = C.sign_delete, },
-    diffFileId                  = {fg = C.blue, style = "bold,reverse", },
-    diffFile                    = {fg = C.bg, style = "bold"},
-    diffNewFile                 = {fg = C.green, },
-    diffOldFile                 = {fg = C.red, },
-    -- GitSignsCurrentLineBlame
 
     -- -- These are untested, probably unneded
     -- diffOnly      = {fg = C.sign_delete, bg = C.bg, style = "NONE", },
@@ -210,7 +129,6 @@ local highlights = {
     -- diffLine      = {fg = C.sign_delete, bg = C.bg, style = "NONE", },
     -- diffIndexLine = {fg = C.sign_delete, bg = C.bg, style = "NONE", },
     -- diffComment   = {fg = C.sign_delete, bg = C.bg, style = "NONE", },
-
 
 }
 
