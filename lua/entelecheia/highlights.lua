@@ -90,7 +90,7 @@ local highlights = {
     Include = {fg = C.purple, style = "NONE",},
     PreProc = {fg = C.yellow, style = "NONE",},
     Define = {fg = C.purple, style = "NONE",},
-    Macro = {fg = C.purple, style = "NONE",},
+    Macro = {fg = C.orange, style = "NONE",},
     PreCondit = {fg = C.purple, style = "NONE",},
     Special = {fg = C.purple, style = "NONE",},
 
@@ -116,6 +116,21 @@ local highlights = {
     TabLineDiag    = {fg = C.red, bg = C.dark, },
     TabLineDiagSel = {fg = C.black, bg = C.green, style="bold" },
     TabLineDiagModSel = {fg = C.black, bg = C.yellow_orange, style="bold" },
+
+    -- Mail
+    mailHeaderKey = {fg = C.purple,  style="NONE" },
+    mailHeader    = {fg = C.cyan,    style="NONE" },
+    mailSubject   = {fg = C.yellow,  style="NONE" },
+    mailURL       = {fg = C.red,     style="NONE" },
+    mailQuoted1   = {fg = C.context, style="NONE" },
+    mailQuoted2   = {fg = C.context, style="NONE" },
+    mailQuoted3   = {fg = C.context, style="NONE" },
+    mailQuoted4   = {fg = C.context, style="NONE" },
+    mailQuoted5   = {fg = C.context, style="NONE" },
+    mailQuoted6   = {fg = C.context, style="NONE" },
+    mailQuoted7   = {fg = C.context, style="NONE" },
+    mailQuoted8   = {fg = C.context, style="NONE" },
+    mailQuoted9   = {fg = C.context, style="NONE" },
 
     -- -- These are untested, probably unneded
     -- diffOnly      = {fg = C.sign_delete, bg = C.bg, style = "NONE", },

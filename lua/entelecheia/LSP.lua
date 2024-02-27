@@ -1,4 +1,5 @@
 local LSP = {
+
     DiagnosticError = {fg = C.error, },
     DiagnosticWarn = {fg = C.warn, },
     DiagnosticInfo = {fg = C.info, },
@@ -19,6 +20,7 @@ local LSP = {
     DiagnosticSignWarn = {fg = C.warn, },
     DiagnosticSignInfo = {fg = C.info, },
     DiagnosticSignHint = {fg = C.hint, },
+
     LspDiagnosticsDefaultError = {fg = C.error_red, },
     LspDiagnosticsDefaultWarning = {fg = C.warning_orange, },
     LspDiagnosticsDefaultInformation = {fg = C.info_yellow, },
@@ -46,6 +48,7 @@ local LSP = {
     LspInfoBorder = {fg = C.blue, bg = Config.transparent_background and "NONE" or C.bg, },
     QuickScopePrimary = {fg = C.purple_test, style = "underline", },
     QuickScopeSecondary = {fg = C.cyan_test, style = "underline", },
+
     TelescopeSelection = {fg = C.hint_blue, },
     TelescopeMatching = {fg = C.info_yellow, style = "bold", },
     TelescopeBorder = {fg = C.blue, bg = Config.transparent_background and "NONE" or C.bg, },
